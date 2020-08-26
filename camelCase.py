@@ -1,8 +1,8 @@
 def validate(word):
-    badCharactors = ['=','+','-']
-    if word[0].isdigit():
+    badCharactors = ['=','+','-'] # list of bad characters 
+    if word[0].isdigit(): # checking if the first character is a digit
         return False
-    if any(c in word for c in badCharactors):
+    if any(c in word for c in badCharactors): # checking if any of the bad characters in the list are in the word
         return False
     return True
 
